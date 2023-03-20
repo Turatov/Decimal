@@ -56,7 +56,7 @@ test: s21_decimal.a
 	cd tests && $(CC) $(CFLAGS) ../s21_decimal.a test.c $(TESTS) -o test $(LIBS)
 
 clean:	
-	rm -rf *.o *.a *.info
+	rm -rf *.o *.info
 	rm -rf *.gcda *.gcno *.out tests/*gcda tests/*gcno
 	rm -rf tests/test
 	rm -rf report

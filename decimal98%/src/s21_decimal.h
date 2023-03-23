@@ -1,5 +1,7 @@
 #ifndef SRC_S21_DECIMAL_H_
 #define SRC_S21_DECIMAL_H_
+#include <stdio.h>
+
 #include "s21_dconst.h"
 
 //  Arithmetic operators
@@ -38,5 +40,7 @@ int s21_negate(s21_decimal value, s21_decimal *result);    // 1
 uint8_t s21_is_full(s21_decimal target);
 s21_decimal s21_round_even(s21_decimal n, s21_decimal div, s21_decimal rem);
 void s21_set_to_inf(s21_decimal value_1, s21_decimal value_2, s21_decimal *inf);
+
+void print_bit(unsigned int aBute, char dec[]);
 
 #endif  //  SRC_S21_DECIMAL_H_

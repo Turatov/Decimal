@@ -2,6 +2,7 @@
 #include "s21_decimal.h"
 
 int s21_from_decimal_to_int(s21_decimal src, int *dst) {
+  print_bit(src.bits32[0], "src2");
   *dst = 0;
   if (s21_truncate(src, &src)) return 1;
   if (src.bits32[1] || src.bits32[2] || src.bits32[0] > 0x80000000) {
